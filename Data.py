@@ -55,7 +55,7 @@ By @DARKEMPIRESL
     ABOUT = """
 **About This Bot** 
 
-A telegram bot to generate pyrogram and telethon string session by @StarkBots
+A telegram bot to generate pyrogram and telethon string session by @trtechguide
 
 Source Code : [Click Here](https://github.com/DARKEMPIRESL/StringSessionBot)
 
