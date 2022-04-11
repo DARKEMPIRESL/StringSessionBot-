@@ -47,6 +47,10 @@
       "required": true,
       "value": ""
     },
+     "OWNER_ID": {
+            "description": "Telegram User id of Owner",
+            "value": ""
+        },
     "MUST_JOIN": {
       "description": "Add username/id of a channel/group",
       "required": false,
