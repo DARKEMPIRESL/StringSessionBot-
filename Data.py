@@ -18,10 +18,7 @@ class Data:
             InlineKeyboardButton("How to Use ❔", callback_data="help"),
             InlineKeyboardButton("🎪 About 🎪", callback_data="about")
         ],
-        [
-            InlineKeyboardButton("Code Owner", url="https://t.me/SL_BOTS_TM"),
-            InlineKeyboardButton("SL Bots Team🇱🇰", url="https://t.me/SlBots_Admins")
-        ],
+        [InlineKeyboardButton("Code Owner", url="https://t.me/SL_BOTS_TM")],
     ]
 
     START = """
