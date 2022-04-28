@@ -2,66 +2,54 @@ from pyrogram.types import InlineKeyboardButton
 
 
 class Data:
-    # Start Message
-    START = """
-Hey {}
+    generate_single_button = [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")]
 
-Welcome to {}
-
-If you don't trust this bot, 
-1) stop reading this message
-2) delete this chat
-
-Still reading?
-You can use me to generate pyrogram and telethon string session. Use below buttons to learn more !
-
-By @DARKEMPIRESL
-    """
-
-    # Home Button
     home_buttons = [
-        [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")],
+        generate_single_button,
         [InlineKeyboardButton(text="🏠 Return Home 🏠", callback_data="home")]
     ]
 
-    generate_button = [
-        [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")]
-    ]
+    generate_button = [generate_single_button]
 
-    # Rest Buttons
     buttons = [
-        [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")],
-        [InlineKeyboardButton("✨ Contact Owner ✨", url="https://t.me/SL_BOTS_TM")],
+        generate_single_button,
+        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/SLBotOfficial/28")],
         [
             InlineKeyboardButton("How to Use ❔", callback_data="help"),
             InlineKeyboardButton("🎪 About 🎪", callback_data="about")
         ],
-        [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/SLBotOfficial")],
+        [
+            InlineKeyboardButton("Code Owner", url="https://t.me/SL_BOTS_TM"),
+            InlineKeyboardButton("SL Bots Team🇱🇰", url="https://t.me/SlBots_Admins")
+        ],
     ]
 
-    # Help Message
+    START = """
+Hey {}
+Welcome to {}
+If you don't trust this bot, 
+1) stop reading this message
+2) delete this chat
+Still reading?
+You can use me to generate pyrogram (even version 2) and telethon string session. Use below buttons to learn more !
+By @SL_BOTS_TM
+    """
+
     HELP = """
 ✨ **Available Commands** ✨
-
 /about - About The Bot
 /help - This Message
 /start - Start the Bot
-/generate - Start Generating Session
+/generate - Generate Session
 /cancel - Cancel the process
 /restart - Cancel the process
 """
 
-    # About Message
     ABOUT = """
 **About This Bot** 
-
-A telegram bot to generate pyrogram and telethon string session by @trtechguide
-
+Telegram Bot to generate Pyrogram and Telethon string session by @SLBotOfficial
 Source Code : [Click Here](https://github.com/DARKEMPIRESL/StringSessionBot)
-
-Framework : [Pyrogram](docs.pyrogram.org)
-
-Language : [Python](www.python.org)
-
-Developer : [𝕯𝖆𝖗𝖐 𝕰𝖒𝖕𝖎𝖗𝖊 🇱🇰🇸 🇱 🇧 🇴 🇹 🇸 ™](https://t.me/SL_BOTS_TM)
+Framework : [Pyrogram](https://docs.pyrogram.org)
+Language : [Python](https://www.python.org)
+Developer : [𝕯𝖆𝖗𝖐 𝕰𝖒𝖕𝖎𝖗𝖊](https://t.me/SL_BOTS_TM)
     """
